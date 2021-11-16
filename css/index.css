@@ -1,0 +1,182 @@
+/* ROOT & FONT*/
+@font-face {
+    font-family: Energy ;
+    src: url(../font/LTEnergy.ttf);
+}
+
+:root{
+    --Blue- :#1045a8;
+    --LightBlue- :#4d82e6;
+    --White-:rgb(255, 255, 255);
+    --Black-:rgb(0, 0, 0);
+    --LightBlack-:rgb(83, 83, 83);
+    --Grey-:rgb(221, 221, 221);
+    --LightGrey-:rgb(236, 236, 236);
+    --Transparent-:rgba(255, 255, 255, 0);
+    --Shadow-:rgba(0, 0, 0, 0.219);
+}
+
+/* HEADER */
+
+.navMenu {
+    text-align: center;    
+    position: fixed;
+    top: 2.7%;
+    left: 50%;
+    width: 100%;
+    height: 5.5%;
+    transform: translate(-50%, -50%);
+    background-color: var(--Grey-);
+
+}
+
+.navMenu a {
+    color: var(--LightBlack-);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 20%;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+    color: var(--LightBlue-);
+}
+
+.navMenu .dot {
+    width: 10%;
+    height: 2%;
+    background: var(--Blue-);
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+    transform: translateX(145%);
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+    transform: translateX(350%);
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+    transform: translateX(551%);
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+    transform: translateX(752%);
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    color: var(--LightBlack-);
+    background-color: var(--Grey-);
+    position: end;
+}
+.RightFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 49.5%;
+    border-right: 1px solid var(--LightBlack-);
+}
+
+.LeftFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 49.5%;
+    border-left: 1px solid var(--LightBlack-);
+}
+.LogoInsta{
+    width: 50px;
+    height: 50px;
+}
+.LogoSnap{
+    width: 50px;
+    height: 50px;
+}
+.LogoJC{
+    width: 50px;
+    height: 50px;
+}
+
+.LogoInsta:hover{
+    content : url("https://www.pngall.com/wp-content/uploads/5/Instagram-Logo-PNG-Image.png") ;
+}
+.LogoSnap:hover{
+    content : url("https://www.freepnglogos.com/uploads/snapchat-logo-icon-png-7.png") ;
+}
+/* PAGE PARAMETRE*/
+
+html,body,main{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    background-color: var(--White-);
+    font-family:Energy;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.Part1{
+    display: flex;
+    flex-direction: row;
+    height: 33.3333%;
+}
+.Part2{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 33.3333%;
+}
+.Right{
+    background-color: var(--White-);
+    width: 50%;
+}
+.Left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--LightGrey-);
+    width: 50%;
+    font-size: 1.9em;
+}
+.Button{
+    font-size: 1em;
+    text-decoration: none;
+    height: 110%;
+    border-radius: 50px;
+    background-color:var(--LightBlue-) ;
+    color: var(--White-);
+    font-family:Energy;
+    border : none;
+}
+
+.Button:hover{
+    background-color: var(--Blue-);
+    box-shadow: 8px 8px 8px 2px var(--Shadow-);
+}
