@@ -7,6 +7,7 @@
 :root{
     --Blue- :#1045a8;
     --LightBlue- :#4d82e6;
+    --Red- : rgb(196, 36, 36) ;
     --White-:rgb(255, 255, 255);
     --Black-:rgb(0, 0, 0);
     --LightBlack-:rgb(83, 83, 83);
@@ -152,8 +153,13 @@ html,body,main{
     height: 33.3333%;
 }
 .Right{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
     background-color: var(--White-);
     width: 50%;
+    
 }
 .Left{
     display: flex;
@@ -179,4 +185,7 @@ html,body,main{
 .Button:hover{
     background-color: var(--Blue-);
     box-shadow: 8px 8px 8px 2px var(--Shadow-);
+}
+.Img{
+    border-radius: 50px;
 }

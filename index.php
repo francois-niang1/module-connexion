@@ -1,3 +1,6 @@
+<?php 
+session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/index.css" rel="stylesheet">
+        <link href="css/header&footer.css" rel="stylesheet">
         <title>Accueil</title>
     </head>
     <body>
@@ -13,7 +17,7 @@
                 <a href="index.php">Accueil</a>
                 <a href="inscription.php">Inscription</a>
                 <a href="connexion.php">Connexion</a>
-                <a href="admin.php">Admin</a>
+                <a href="profil.php">Profil</a>
                 <div class="dot"></div>
             </nav>
         </header>
@@ -21,11 +25,11 @@
             <div class = 'Container'>
                 <div class="Part1">
                     <div class="Left">
-                        <p>"Welcome In Takahiro World's" <br> Si tu es amateur de manga
+                        <p>"Welcome In Takahiro World's" <br> <?php if(isset($_SESSION['login'])){echo $_SESSION['login'];}?> Si tu es amateur de manga
                             et d'art ce monde est fait pour toi !!! </p>
                     </div>
                     <div class="Right">
-                        
+                        <img class = 'Img' src="image/Moi.PNG" alt="Moi" width = '245px' heigth = '245px' >
                     </div>
                 </div>
                 <div class="Part2">
@@ -38,17 +42,22 @@
                         
                     </div>
                 </div>
-                <div class="Part1">
-                    <div class="Left">
-                        <p> Connecte toi pour profiter de reductions et points fidélités <br>
-                        Tu n'as pas de comptre ? c'est pas grave inscris toi juste ici ;) </p>
-                        <div class="DivButton">
-                            <button class='Button'><a class='Button' href="connexion.php">Connexion</a></button>
-                            <button class='Button'><a class='Button' href="inscription.php">Inscription</a></button>
-                        </div>
+                <div class='Part1'>
+                    <div class='Left'>
+                <?php if(!isset($_SESSION['login'])){
+                        echo"
                         
+                            <p> Connecte toi pour profiter de reductions et points fidélités <br>
+                            Tu n'as pas de compte ? c'est pas grave inscris toi juste ici ;) </p>
+                            <div class='DivButton'>
+                                <button class='Button'><a class='Button' href='connexion.php'>Connexion</a></button>
+                                <button class='Button'><a class='Button' href='inscription.php'>Inscription</a></button>
+                            </div>
+                            
+                        ";
+                    } ?>
                     </div>
-                    <div class="Right">
+                    <div class='Right'>
                         
                     </div>
                 </div>
@@ -58,13 +67,10 @@
             <div class="RightFooter">
                 Copyright © 2021 François Niang - All Rights Reserved
             </div>
-            <div class="Center">
-
-            </div>
             <div class="LeftFooter">
                 Suivre L'actualité de Takahiro
-                <a href="https://www.instagram.com/takahiro__arts/"><img class = 'LogoInsta' src="https://lh3.googleusercontent.com/proxy/yUFwQ9Zo066bT4xA0aQ8XnmVeoJtRSRjSx31IjYpffluFeE8HZSJXiyKRIbr915Dsr3sMbB9QBQCPz4pnIbCSg7Wd46nda94jzglvjiVcZeI8GmscE-jU8VnmUXWtEs3evxsIOInq3kRVGfM_7pGgjnrvxgJvg" alt="logo insta"></a> 
-                <img class = 'LogoSnap' src="http://assets.stickpng.com/images/5a4e30612da5ad73df7efe71.png" alt="logo snap">
+                <a href="https://www.instagram.com/takahiro__arts/"><img class = 'LogoInsta' src="https://www.pngall.com/wp-content/uploads/5/Instagram-Logo-PNG-Image-File.png" alt="logo insta"></a> 
+                <a href=""> <img class = 'LogoSnap' src="http://assets.stickpng.com/images/5a4e30612da5ad73df7efe71.png" alt="logo snap"></a>
                 <a href="https://www.jc-case.com/"><img class = 'LogoJC' src="https://www.jc-case.com/Files/130058/Img/10/logo-JC.png" alt="logo jc case"></a>
             </div>
         </footer>
