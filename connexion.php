@@ -1,5 +1,5 @@
-<?php 
-session_start(); 
+<?php
+session_start();
 if(isset($_SESSION['login'])){
     header('Location: profil.php');
 }
@@ -12,6 +12,7 @@ if(isset($_SESSION['login'])){
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/connexion.css" rel="stylesheet">
         <link href="css/header&footer.css" rel="stylesheet">
+        <link href="css/root&font.css" rel="stylesheet">
         <title>Connexion</title>
     </head>
     <body>
@@ -26,7 +27,7 @@ if(isset($_SESSION['login'])){
                     <input class='input' type="password" id="prenom" name="password" placeholder="Mot de passe"/>
                     <input class = "button" type="submit" name = "connexion" value="Connexion" >
                     <p class="message">Vous n'avez pas de compte ? <a href="inscription.php">Inscrivez vous !</a></p>
-                    <?php require ('fonction.php'); Connect(); Error();?>                
+                    <?php require ('fonction.php'); Connect(); ?>
                 </form>
             </div>
         </div>

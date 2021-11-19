@@ -1,5 +1,5 @@
-<?php 
-session_start(); 
+<?php
+session_start();
 if(isset($_SESSION['login'])){
     header('Location: profil.php');
 }
@@ -12,6 +12,7 @@ if(isset($_SESSION['login'])){
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/inscription.css" rel="stylesheet">
         <link href="css/header&footer.css" rel="stylesheet">
+        <link href="css/root&font.css" rel="stylesheet">
         <title>Inscription</title>
     </head>
     <body>
@@ -27,23 +28,12 @@ if(isset($_SESSION['login'])){
                     <input class='input' type="text" id="prenom" name="prenom" placeholder="Prénom"/>
                     <input class='input' type="password" id="password" name="password" placeholder="Mot de passe"/>
                     <input class='input' type="password" id="ConfirmMdp" name="ConfirmMdp" placeholder=" Confirmer le Mot de passe"/>
-                    <input class = "button" type="submit" value="S'incrire">
+                    <input class = "button" type="submit" value="S'incrire" name = 'inscription'>
                     <p class="message">Vous avez déjà un compte ? <a href="connexion.php">Connectez vous !</a></p>
                 </form>
-                <?php 
+                <?php
                 require ('fonction.php');
                 New_user();
-
-                if (isset($_POST["Mdp"]) != isset($_POST["ConfirmMdp"])){
-                   echo '<p>"Mot de passe non identique. Réessayez !"</p> <style>p{color :var(--Red-); font-size:1.4em;}</style>';
-                }
-                // if (!empty($_POST['login']) && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['password'])){
-                //     echo '';
-                // }
-                // else {
-                //     echo 'Remplissez tous les champs';
-                // }
-                Check_Log();
                 ?>
             </div>
         </div>

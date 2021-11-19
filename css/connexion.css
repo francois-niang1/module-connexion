@@ -1,21 +1,3 @@
-/* ROOT & FONT*/
-@font-face {
-    font-family: Energy ;
-    src: url(../font/LTEnergy.ttf);
-}
-
-:root{
-    --Blue- :#1045a8;
-    --LightBlue- :#4d82e6;
-    --Red- : rgb(196, 36, 36) ;
-    --White-:rgb(255, 255, 255);
-    --Black-:rgb(0, 0, 0);
-    --LightBlack-:rgb(83, 83, 83);
-    --Grey-:rgb(221, 221, 221);
-    --LightGrey-:rgb(236, 236, 236);
-    --Transparent-:rgba(255, 255, 255, 0);
-    --Shadow-:rgba(0, 0, 0, 0.219);
-}
 
 /* FORMULAIRE */
 html,body,main{
