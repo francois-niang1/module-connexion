@@ -1,6 +1,6 @@
 <?php
 function New_user(){ // Fonction permettant d'ajouter les user a la base de donnee
-    $Bdd = mysqli_connect('localhost', 'root', '', 'moduleconnexion'); // Appeller la bdd
+    $Bdd = mysqli_connect('localhost', 'francois-niang', '24062000Niangdiop', 'francois-niang_moduleconnexion'); // Appeller la bdd
     mysqli_set_charset($Bdd, 'utf8'); // Intégrer tous les char
 
     if (!empty($_POST['login']) && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['password'])){
@@ -35,7 +35,7 @@ function Connect(){ // Fonction permettant la connexion des users
         $login = $_POST['login'];
         $password = $_POST['password'];
         if ($login != NULL && $password != NULL) { //Selection des Users
-            $Bdd = mysqli_connect('localhost', 'root', '', 'moduleconnexion');
+            $Bdd = mysqli_connect('localhost', 'francois-niang', '24062000Niangdiop', 'francois-niang_moduleconnexion');
             mysqli_set_charset($Bdd, 'utf8');
             $Requete = mysqli_query($Bdd, "SELECT * FROM utilisateurs WHERE login='".$login."' && password='".$password."'");
             $Rows = mysqli_num_rows($Requete);
@@ -84,7 +84,7 @@ function ChangePrenom(){
             $repeatnewprenom = $_POST['repeatnewprenom'];
             if ($prenom && $newprenom && $repeatnewprenom) {
                 if ($newprenom == $repeatnewprenom) {
-                    $Bdd = mysqli_connect('localhost', 'root', '', 'moduleconnexion') or die('Erreur');
+                    $Bdd = mysqli_connect('localhost', 'francois-niang', '24062000Niangdiop', 'francois-niang_moduleconnexion') or die('Erreur');
                     $Requete = mysqli_query($Bdd, "SELECT * FROM utilisateurs WHERE login = '$username' AND prenom = '$prenom'");
                     $rows = mysqli_num_rows($Requete);
                     if ($rows==1) {
@@ -118,7 +118,7 @@ function ChangeMdp(){
             $repeatnewpassword = $_POST['repeatnewpassword'];
             if ($password && $newpassword && $repeatnewpassword) {
                 if ($newpassword == $repeatnewpassword) {
-                    $Bdd = mysqli_connect('localhost', 'root', '', 'moduleconnexion') or die('Erreur');
+                    $Bdd = mysqli_connect('localhost', 'francois-niang', '24062000Niangdiop', 'francois-niang_moduleconnexion') or die('Erreur');
                     $Requete = mysqli_query($Bdd, "SELECT * FROM utilisateurs WHERE login = '$username' AND password = '$password'");
                     $rows = mysqli_num_rows($Requete);
                     if ($rows==1) {
@@ -152,7 +152,7 @@ function ChangeNom(){
             $repeatnewnom = $_POST['repeatnewnom'];
             if ($nom && $newnom && $repeatnewnom) {
                 if ($newnom == $repeatnewnom) {
-                    $Bdd = mysqli_connect('localhost', 'root', '', 'moduleconnexion') or die('Erreur');
+                    $Bdd = mysqli_connect('localhost', 'francois-niang', '24062000Niangdiop', 'francois-niang_moduleconnexion') or die('Erreur');
                     $Requete = mysqli_query($Bdd, "SELECT * FROM utilisateurs WHERE login = '$username' AND nom = '$nom'");
                     $rows = mysqli_num_rows($Requete);
                     if ($rows==1) {
@@ -180,7 +180,7 @@ function ChangeNom(){
 function Info(){
     if (isset($_SESSION['login'])){
         $ConnectedUser = $_SESSION['login'];
-        $Bdd = mysqli_connect('localhost', 'root', '', 'moduleconnexion') or die('Erreur');
+        $Bdd = mysqli_connect('localhost', 'francois-niang', '24062000Niangdiop', 'francois-niang_moduleconnexion') or die('Erreur');
         $Requete = mysqli_query($Bdd, "SELECT `login`, `prenom`, `nom` FROM utilisateurs WHERE `login`= '$ConnectedUser'");
         $rows = mysqli_num_rows($Requete);
         if ($rows == 1){

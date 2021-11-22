@@ -4,7 +4,7 @@ require('fonction.php');
 if ($_SESSION['login'] != 'admin'){
     header('Location: index.php');
 }
-$Bdd = mysqli_connect('localhost', 'root', '', 'moduleconnexion');
+$Bdd = mysqli_connect('localhost', 'francois-niang', '24062000Niangdiop', 'francois-niang_moduleconnexion');
 mysqli_set_charset($Bdd, 'utf8');
 $Requete = mysqli_query($Bdd, "SELECT * FROM utilisateurs");
 $Users = mysqli_fetch_all($Requete, MYSQLI_ASSOC);
