@@ -65,7 +65,7 @@ session_start();
                         <div class = 'Left1'>
                             <img class = 'Img3' src='image/SNK.PNG' alt='SNK' width = '22%'>
                             <img class = 'Img3' src='image/Portrait.PNG' alt='Portrait' width = '27%'>
-                            <img class = 'Img3' src='image/shoes.PNG' alt='Shoes' width = '27%'>
+                            <img class = 'Img3' src='image/shoes.png' alt='Shoes' width = '27%'>
                         </div>";
                     }
                     ?>
