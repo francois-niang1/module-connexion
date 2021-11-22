@@ -40,9 +40,9 @@ session_start();
                         Et bien bonne nouvelle !! Ne cherche plus tu es au bon endroit :) </p>
                     </div>
                     <div class="Right2">
-                        <img class = 'Img2' src="image/DBZ.PNG" alt="Moi" width = '22%' >
-                        <img class = 'Img2' src="image/DemonSlayer" alt="Moi" width = '22%'  >
-                        <img class = 'Img2' src="image/Nanatsu.PNG" alt="Moi" width = '23%'  >
+                        <img class = 'Img2' src="image/DBZ.PNG" alt="DBZ" width = '22%' >
+                        <img class = 'Img2' src="image/DemonSlayer.PNG" alt="Demon Slayer" width = '22%'  >
+                        <img class = 'Img2' src="image/Nanatsu.PNG" alt="Nanatsu" width = '23%'  >
                     </div>
                 </div>
                 <div class='Part1'>
@@ -63,16 +63,16 @@ session_start();
                     if(isset($_SESSION['login'])){
                         echo"
                         <div class = 'Left1'>
-                            <img class = 'Img3' src='image/SNK.png' alt='Moi' width = '22%'>
-                            <img class = 'Img3' src='image/Portrait.png' alt='Moi' width = '27%'>
-                            <img class = 'Img3' src='image/shoes.png' alt='Moi' width = '27%'>
+                            <img class = 'Img3' src='image/SNK.PNG' alt='SNK' width = '22%'>
+                            <img class = 'Img3' src='image/Portrait.PNG' alt='Portrait' width = '27%'>
+                            <img class = 'Img3' src='image/shoes.PNG' alt='Shoes' width = '27%'>
                         </div>";
                     }
                     ?>
                     <div class='Right2'>
-                        <img class = 'Img3' src="image/Eren.png" alt="Moi" width = '29%'  >
-                        <img class = 'Img3' src="image/Gojo.png" alt="Moi" width = '29%'  >
-                        <img class = 'Img3' src="image/VegetaXBulma.png" alt="Moi" width = '29%'  >
+                        <img class = 'Img3' src="image/Eren.PNG" alt="Eren" width = '29%'  >
+                        <img class = 'Img3' src="image/Gojo.PNG" alt="Gojo" width = '29%'  >
+                        <img class = 'Img3' src="image/VegetaXBulma.PNG" alt="VegetaXBulmla" width = '29%'  >
                     </div>
                 </div>
             </div>
