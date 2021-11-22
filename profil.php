@@ -31,46 +31,54 @@ if(!isset($_SESSION['login'])){
             </nav>
         </header>
         <main>
-        <div class="login-page">
-            <div class="form">
-                <form action="" method="post" class="login-form">
-                    <input class = "button" type="submit" name = "deconnexion" value="Déconnexion" >
-                    <?php  Deconnect();
-                    DecoOrCo();
-                    if ($_SESSION['login'] == 'admin'){
-                        echo '<button class = "buttonAdmin"><a class = "text"href="admin.php">Admin</a></button>
-                        <style>
-                        .buttonAdmin{
-                            letter-spacing: 1px;
-                            font-family:Energy;
-                            text-transform: uppercase;
-                            outline: 0;
-                            background: var(--LightBlue-);
-                            width: 40%;
-                            border: 0;
-                            padding: 5%;
-                            color: var(--Black-);
-                            font-size: 1.2em;
-                            cursor: pointer;
-                            margin-bottom :5%;
-                        }
-                        .text{
-                            font-family : Energy;
-                            color : var(--White-);
-                            text-decoration : none;
-                        }
-                        .buttonAdmin:hover{
-                            font-size: 1.2em;
-                            background-color: var(--Blue-);
-                        }
-                        </style>';
-                    }
-                    ?>
-                    <button class = "change"><a class = "none"href="prenom.php">Changer le Prenom</a></button>
-                    <button class = "change"><a class = "none"href="nom.php">Changer le Nom</a></button>
-                    <button class = "change"><a class = "none"href="password.php">Changer Le Mot de passe</a></button>
-                    <button class = "change"><a class = "none"href="info.php">Mes Informations</a></button>
-                </form>
+            <div class="Container">
+                <div class="login-page">
+                    <div class="form">
+                        <form action="" method="post" class="login-form">
+                            <input class = "button" type="submit" name = "deconnexion" value="Déconnexion" >
+                            <?php  Deconnect();
+                            DecoOrCo();
+                            if ($_SESSION['login'] == 'admin'){
+                                echo '<button class = "buttonAdmin"><a class = "text"href="admin.php">Admin</a></button>
+                                <style>
+                                .buttonAdmin{
+                                    letter-spacing: 1px;
+                                    font-family:Energy;
+                                    text-transform: uppercase;
+                                    outline: 0;
+                                    background: var(--LightBlue-);
+                                    width: 40%;
+                                    border: 0;
+                                    padding: 5%;
+                                    color: var(--Black-);
+                                    font-size: 1.2em;
+                                    cursor: pointer;
+                                    margin-bottom :5%;
+                                }
+                                .text{
+                                    font-family : Energy;
+                                    color : var(--White-);
+                                    text-decoration : none;
+                                }
+                                .buttonAdmin:hover{
+                                    font-size: 1.2em;
+                                    background-color: var(--Blue-);
+                                }
+                                </style>';
+                            }
+                            ?>
+                            <button class = "change"><a class = "none"href="prenom.php">Changer le Prenom</a></button>
+                            <button class = "change"><a class = "none"href="nom.php">Changer le Nom</a></button>
+                            <button class = "change"><a class = "none"href="password.php">Changer Le Mot de passe</a></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="login-page">
+                    <div class="form">
+                        <h1><u>Mes Informations</u></h1>
+                        <?php Info();?>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>

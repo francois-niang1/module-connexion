@@ -38,7 +38,6 @@ require('fonction.php');
             </div>
         </main>
         <footer>
-            
         </footer>
     </body>
 </html>

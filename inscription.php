@@ -30,6 +30,7 @@ if(isset($_SESSION['login'])){
                     <input class='input' type="password" id="ConfirmMdp" name="ConfirmMdp" placeholder=" Confirmer le Mot de passe"/>
                     <input class = "button" type="submit" value="S'incrire" name = 'inscription'>
                     <p class="message">Vous avez déjà un compte ? <a href="connexion.php">Connectez vous !</a></p>
+                    <button class = 'button1'> <a class = 'none' href="index.php"> Accueil</a></button>
                 </form>
                 <?php
                 require ('fonction.php');

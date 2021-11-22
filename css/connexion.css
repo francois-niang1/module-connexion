@@ -35,7 +35,7 @@ html,body,main{
     margin: 0 0 15px;
     padding: 15px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 1.1em;
     letter-spacing: 1px;
 }
 .button {
@@ -48,7 +48,7 @@ html,body,main{
     border: 0;
     padding: 15px;
     color: var(--White-);
-    font-size: 14px;
+    font-size: 1.4em;
     cursor: pointer;
 }
 .form .message {
@@ -71,4 +71,26 @@ html,body,main{
     z-index: 1;
     max-width: 300px;
     margin: 0 auto;
+}
+.button1 {
+    letter-spacing: 1px;
+    font-family:Energy;
+    text-transform: uppercase;
+    outline: 0;
+    background: var(--LightBlue-);
+    width: 40%;
+    border: 0;
+    padding: 4%;
+    color: var(--Black-);
+    font-size: 1.4em;
+    cursor: pointer;
+    margin-top: 5%;
+}
+.button1:hover{
+    color: var(--White-);
+    background-color: var(--Blue-);
+}
+.none{
+    text-decoration: none;
+    color: var(--White-);
 }

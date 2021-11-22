@@ -26,7 +26,7 @@ session_start();
             <div class = 'Container'>
                 <div class="Part1">
                     <div class="Left">
-                        <p class='Txt1'>"Welcome In Takahiro World's" <br> <?php if(isset($_SESSION['login'])){echo $_SESSION['login'];}?> Si tu es amateur de manga
+                        <p class='Txt1'>"Welcome In Takahiro World's" <br> <?php if(isset($_SESSION['login'])){echo $_SESSION['login'].'<br>';}?> Si tu es amateur de manga
                             et d'art ce monde est fait pour toi !!! </p>
                     </div>
                     <div class="Right">

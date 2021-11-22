@@ -27,6 +27,7 @@ if(isset($_SESSION['login'])){
                     <input class='input' type="password" id="prenom" name="password" placeholder="Mot de passe"/>
                     <input class = "button" type="submit" name = "connexion" value="Connexion" >
                     <p class="message">Vous n'avez pas de compte ? <a href="inscription.php">Inscrivez vous !</a></p>
+                    <button class = 'button1'> <a class = 'none' href="index.php"> Accueil</a></button>
                     <?php require ('fonction.php'); Connect(); ?>
                 </form>
             </div>
